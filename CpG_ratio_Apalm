@@ -1,0 +1,411 @@
+{
+ "metadata": {
+  "name": "",
+  "signature": "sha256:53c679739aed5d7da7b777341d2ab03e272081acaccd21f3bde3cb8f88b2c016"
+ },
+ "nbformat": 3,
+ "nbformat_minor": 0,
+ "worksheets": [
+  {
+   "cells": [
+    {
+     "cell_type": "markdown",
+     "metadata": {},
+     "source": [
+      "Blast of Seriatopora hystrix transcriptome from: http://people.oregonstate.edu/~meyere/data.html"
+     ]
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [
+      "!blastx \\\n",
+      "-query /Volumes/web/astrangia/Shys_transcriptome_v1.fasta \\\n",
+      "-db /Users/Shared/data/blast/db/uniprot_sprot \\\n",
+      "-max_target_seqs 1 \\\n",
+      "-max_hsps 1 \\\n",
+      "-outfmt 6 \\\n",
+      "-num_threads 8 \\\n",
+      "-out /Volumes/web/astrangia/Shys_blastx_uniprot.tab"
+     ],
+     "language": "python",
+     "metadata": {},
+     "outputs": [
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 196 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 273 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 13 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 681 replaced by X\r\n",
+        "Selenocysteine (U) at position 696 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 273 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n",
+        "Selenocysteine (U) at position 13 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 129 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1180 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 667 replaced by X\r\n",
+        "Selenocysteine (U) at position 665 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1424 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 273 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1010 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 637 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 200 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 436 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 498 replaced by X\r\n",
+        "Selenocysteine (U) at position 666 replaced by X\r\n",
+        "Selenocysteine (U) at position 494 replaced by X\r\n",
+        "Selenocysteine (U) at position 648 replaced by X\r\n",
+        "Selenocysteine (U) at position 612 replaced by X\r\n",
+        "Selenocysteine (U) at position 498 replaced by X\r\n",
+        "Selenocysteine (U) at position 498 replaced by X\r\n",
+        "Selenocysteine (U) at position 498 replaced by X\r\n",
+        "Selenocysteine (U) at position 510 replaced by X\r\n",
+        "Selenocysteine (U) at position 523 replaced by X\r\n",
+        "Selenocysteine (U) at position 523 replaced by X\r\n",
+        "Selenocysteine (U) at position 525 replaced by X\r\n",
+        "Selenocysteine (U) at position 681 replaced by X\r\n",
+        "Selenocysteine (U) at position 696 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1080 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 73 replaced by X\r\n",
+        "Selenocysteine (U) at position 73 replaced by X\r\n",
+        "Selenocysteine (U) at position 129 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 637 replaced by X\r\n",
+        "Selenocysteine (U) at position 690 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 196 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 65 replaced by X\r\n",
+        "Selenocysteine (U) at position 47 replaced by X\r\n",
+        "Selenocysteine (U) at position 47 replaced by X\r\n",
+        "Selenocysteine (U) at position 49 replaced by X\r\n",
+        "Selenocysteine (U) at position 53 replaced by X\r\n",
+        "Selenocysteine (U) at position 49 replaced by X\r\n",
+        "Selenocysteine (U) at position 49 replaced by X\r\n",
+        "Selenocysteine (U) at position 49 replaced by X\r\n",
+        "Selenocysteine (U) at position 54 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1460 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 37 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 59 replaced by X\r\n",
+        "Selenocysteine (U) at position 300 replaced by X\r\n",
+        "Selenocysteine (U) at position 318 replaced by X\r\n",
+        "Selenocysteine (U) at position 330 replaced by X\r\n",
+        "Selenocysteine (U) at position 345 replaced by X\r\n",
+        "Selenocysteine (U) at position 352 replaced by X\r\n",
+        "Selenocysteine (U) at position 367 replaced by X\r\n",
+        "Selenocysteine (U) at position 369 replaced by X\r\n",
+        "Selenocysteine (U) at position 376 replaced by X\r\n",
+        "Selenocysteine (U) at position 378 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 59 replaced by X\r\n",
+        "Selenocysteine (U) at position 318 replaced by X\r\n",
+        "Selenocysteine (U) at position 330 replaced by X\r\n",
+        "Selenocysteine (U) at position 345 replaced by X\r\n",
+        "Selenocysteine (U) at position 352 replaced by X\r\n",
+        "Selenocysteine (U) at position 367 replaced by X\r\n",
+        "Selenocysteine (U) at position 369 replaced by X\r\n",
+        "Selenocysteine (U) at position 376 replaced by X\r\n",
+        "Selenocysteine (U) at position 378 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 85 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 16 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1728 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 690 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 637 replaced by X\r\n",
+        "Selenocysteine (U) at position 690 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1231 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Title is very long: 1098 characters (max is 1000)\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 133 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 130 replaced by X\r\n",
+        "Selenocysteine (U) at position 263 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 637 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Selenocysteine (U) at position 152 replaced by X\r\n"
+       ]
+      },
+      {
+       "output_type": "stream",
+       "stream": "stdout",
+       "text": [
+        "Error: (1431.1) FASTA-Reader: Warning: FASTA-Reader: Ignoring FASTA modifier(s) found because the input was not expected to have any.\r\n"
+       ]
+      }
+     ],
+     "prompt_number": 1
+    },
+    {
+     "cell_type": "code",
+     "collapsed": false,
+     "input": [],
+     "language": "python",
+     "metadata": {},
+     "outputs": []
+    }
+   ],
+   "metadata": {}
+  }
+ ]
+}
